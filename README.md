@@ -2,7 +2,7 @@
 
 College GitHub account: **11259a185-vibhas**.
 
-11 programs, each in its own folder with code, supplied text output, datasets where required, and graphs where applicable. Open an experiment to view its code and output together.
+12 programs, each in its own folder with code, supplied text output, datasets where required, and graphs where applicable. Open an experiment to view its code and output together.
 
 | No. | Experiment | Code | Output |
 |---:|---|---|---|
@@ -18,6 +18,8 @@ $111259A185 - Random Forest](11259A185-09-Random-Forest/) | [Code](11259A185-09-
 $111259A185 - AdaBoost](11259A185-10-AdaBoost/) | [Code](11259A185-10-AdaBoost/11259A185_adaboost.py) | [Output](11259A185-10-AdaBoost/output.txt) |
 $111259A185 - Implement a Basic Reinforcement Learning Model](11259A185-11-Reinforcement-Learning/) | [Code](11259A185-11-Reinforcement-Learning/11259A185_q_learning.py) | [Output](11259A185-11-Reinforcement-Learning/output.txt) |
 
+| 12 | [11259A185 - Neural Network](11259A185-12-Neural-Network/) | [Code](11259A185-12-Neural-Network/11259A185_neural_network.py) | [Output](11259A185-12-Neural-Network/output.txt) |
+
 ## Setup
 
 Install dependencies once from the repository root:
@@ -29,6 +31,7 @@ pip install -r requirements.txt
 Then open the desired experiment folder and follow its Run instructions. Outputs and graphs are the supplied results.
 
 [All experiments index](All_Codes_and_Outputs.md)
+
 
 
 
