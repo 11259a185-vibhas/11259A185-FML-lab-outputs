@@ -2,7 +2,7 @@
 
 College GitHub account: **11259a185-vibhas**.
 
-The first 10 programs, each in its own folder with code, dataset, supplied text output, and graphs where applicable. Open an experiment to view its code and output together.
+11 programs, each in its own folder with code, supplied text output, datasets where required, and graphs where applicable. Open an experiment to view its code and output together.
 
 | No. | Experiment | Code | Output |
 |---:|---|---|---|
@@ -16,6 +16,7 @@ The first 10 programs, each in its own folder with code, dataset, supplied text 
 | 8 | [Hierarchical Clustering](08-Hierarchical-Clustering/) | [Code](08-Hierarchical-Clustering/hierarchical_clustering.py) | [Output](08-Hierarchical-Clustering/output.txt) |
 | 9 | [Random Forest](09-Random-Forest/) | [Code](09-Random-Forest/random_forest.py) | [Output](09-Random-Forest/output.txt) |
 | 10 | [AdaBoost](10-AdaBoost/) | [Code](10-AdaBoost/adaboost.py) | [Output](10-AdaBoost/output.txt) |
+| 11 | [Implement a Basic Reinforcement Learning Model](11-Reinforcement-Learning/) | [Code](11-Reinforcement-Learning/q_learning.py) | [Output](11-Reinforcement-Learning/output.txt) |
 
 ## Setup
 
@@ -28,3 +29,5 @@ pip install -r requirements.txt
 Then open the desired experiment folder and follow its Run instructions. Outputs and graphs are the supplied results.
 
 [All experiments index](All_Codes_and_Outputs.md)
+
+

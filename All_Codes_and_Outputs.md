@@ -40,3 +40,8 @@
 
 [Open experiment with code, output, and graphs](10-AdaBoost/)
 
+
+## 11. Implement a Basic Reinforcement Learning Model
+
+[Open experiment with code and output](11-Reinforcement-Learning/)
+
