@@ -1,8 +1,8 @@
-# 4. Linear Regression
+$111259A185 - Linear Regression
 
 [Back to experiments](../README.md)
 
-[Python source](linear_regression.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_linear_regression.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
@@ -71,4 +71,5 @@ Predicted Marks:
 
 ## Run
 
-From this experiment folder, run: `python linear_regression.py`.
+From this experiment folder, run: `python 11259A185_linear_regression.py`.
+

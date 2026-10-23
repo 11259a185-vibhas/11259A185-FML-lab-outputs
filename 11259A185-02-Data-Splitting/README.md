@@ -1,8 +1,8 @@
-# 2. Data Splitting
+$111259A185 - Data Splitting
 
 [Back to experiments](../README.md)
 
-[Python source](data_splitting.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_data_splitting.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
@@ -63,4 +63,5 @@ Testing Samples: 4
 
 ## Run
 
-From this experiment folder, run: `python data_splitting.py`.
+From this experiment folder, run: `python 11259A185_data_splitting.py`.
+

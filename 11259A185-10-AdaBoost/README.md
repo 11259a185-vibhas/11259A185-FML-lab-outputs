@@ -1,38 +1,44 @@
-# 5. KNN Classification
+$111259A185 - AdaBoost
 
 [Back to experiments](../README.md)
 
-[Python source](knn_classification.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_adaboost.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
 ```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-# Load dataset
+import matplotlib.pyplot as plt
+
 data = pd.read_csv("data.csv")
-# Input features
-X = data[['Hours_Studied', 'Attendance','Assignments']]
-# Target variable
+
+X = data[['Hours_Studied', 'Attendance', 'Assignments']]
 y = data['Result']
-# Split dataset
+
 X_train, X_test, y_train, y_test = train_test_split(
-X, y, test_size=0.2, random_state=42
+    X, y, test_size=0.2, random_state=42
 )
-# Create KNN model
-model = KNeighborsClassifier(n_neighbors=3)
-# Train model
+
+model = AdaBoostClassifier(n_estimators=50, random_state=42)
 model.fit(X_train, y_train)
-# Predict
+
 y_pred = model.predict(X_test)
-# Evaluation Metrics
+
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
-print(classification_report(y_test, y_pred))
+print(classification_report(y_test, y_pred, zero_division=0))
+
+importance = model.feature_importances_
+plt.bar(X.columns, importance)
+plt.xlabel("Features")
+plt.ylabel("Importance")
+plt.title("AdaBoost Feature Importance")
+plt.show()
 ```
 
 ## Output
@@ -55,6 +61,12 @@ Classification Report:
 weighted avg       1.00      1.00      1.00         4
 ```
 
+## Graphs
+
+![AdaBoost - adaboost_feature_importance.png](adaboost_feature_importance.png)
+
+
 ## Run
 
-From this experiment folder, run: `python knn_classification.py`.
+From this experiment folder, run: `python 11259A185_adaboost.py`.
+

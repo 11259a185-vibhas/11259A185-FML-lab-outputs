@@ -1,8 +1,8 @@
-# 6. SVM Classification
+$111259A185 - SVM Classification
 
 [Back to experiments](../README.md)
 
-[Python source](svm_classification.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_svm_classification.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
@@ -104,7 +104,7 @@ print(classification_report(y_test, y_pred))
 
 
 # -----------------------------
-# 1. Confusion Matrix Graph
+$111259A185 - Confusion Matrix Graph
 # -----------------------------
 plt.figure(figsize=(6, 5))
 
@@ -120,11 +120,13 @@ sns.heatmap(
 plt.xlabel("Predicted Result")
 plt.ylabel("Actual Result")
 plt.title("SVM Confusion Matrix")
-plt.show()
+plt.tight_layout()
+plt.savefig("svm_confusion_matrix.png", dpi=180, bbox_inches="tight")
+plt.close()
 
 
 # -----------------------------
-# 2. Evaluation Metrics Graph
+$111259A185 - Evaluation Metrics Graph
 # -----------------------------
 report = classification_report(
     y_test,
@@ -147,14 +149,16 @@ plt.bar(
     color=['blue', 'green', 'orange', 'red']
 )
 
-plt.ylim(0, 1)
+plt.ylim(0, 1.12)
 plt.ylabel("Score")
 plt.title("SVM Classification Evaluation Metrics")
 
 for i, value in enumerate(metrics.values()):
     plt.text(i, value + 0.02, f"{value:.2f}", ha='center')
 
-plt.show()
+plt.tight_layout()
+plt.savefig("svm_evaluation_metrics.png", dpi=180, bbox_inches="tight")
+plt.close()
 ```
 
 ## Output
@@ -177,6 +181,15 @@ Classification Report:
 weighted avg       1.00      1.00      1.00         4
 ```
 
+## Graphs
+
+![SVM confusion matrix](svm_confusion_matrix.png)
+
+![SVM evaluation metrics](svm_evaluation_metrics.png)
+
+These metrics describe the four held-out test records in the supplied dataset.
+
 ## Run
 
-From this experiment folder, run: `python svm_classification.py`.
+From this experiment folder, run `python 11259A185_svm_classification.py`. Both PNG graphs are saved in this folder.
+

@@ -1,47 +1,48 @@
 # All Codes and Outputs
 
-## 1. Data Preprocessing
+$111259A185 - Data Preprocessing
 
-[Open experiment with code, output, and graphs](01-Data-Preprocessing/)
+[Open experiment with code, output, and graphs](11259A185-01-Data-Preprocessing/)
 
-## 2. Data Splitting
+$111259A185 - Data Splitting
 
-[Open experiment with code, output, and graphs](02-Data-Splitting/)
+[Open experiment with code, output, and graphs](11259A185-02-Data-Splitting/)
 
-## 3. Cross Validation
+$111259A185 - Cross Validation
 
-[Open experiment with code, output, and graphs](03-Cross-Validation/)
+[Open experiment with code, output, and graphs](11259A185-03-Cross-Validation/)
 
-## 4. Linear Regression
+$111259A185 - Linear Regression
 
-[Open experiment with code, output, and graphs](04-Linear-Regression/)
+[Open experiment with code, output, and graphs](11259A185-04-Linear-Regression/)
 
-## 5. KNN Classification
+$111259A185 - KNN Classification
 
-[Open experiment with code, output, and graphs](05-KNN-Classification/)
+[Open experiment with code, output, and graphs](11259A185-05-KNN-Classification/)
 
-## 6. SVM Classification
+$111259A185 - SVM Classification
 
-[Open experiment with code, output, and graphs](06-SVM-Classification/)
+[Open experiment with code, output, and graphs](11259A185-06-SVM-Classification/)
 
-## 7. K-Means Clustering
+$111259A185 - K-Means Clustering
 
-[Open experiment with code, output, and graphs](07-K-Means-Clustering/)
+[Open experiment with code, output, and graphs](11259A185-07-K-Means-Clustering/)
 
-## 8. Hierarchical Clustering
+$111259A185 - Hierarchical Clustering
 
-[Open experiment with code, output, and graphs](08-Hierarchical-Clustering/)
+[Open experiment with code, output, and graphs](11259A185-08-Hierarchical-Clustering/)
 
-## 9. Random Forest
+$111259A185 - Random Forest
 
-[Open experiment with code, output, and graphs](09-Random-Forest/)
+[Open experiment with code, output, and graphs](11259A185-09-Random-Forest/)
 
-## 10. AdaBoost
+$111259A185 - AdaBoost
 
-[Open experiment with code, output, and graphs](10-AdaBoost/)
+[Open experiment with code, output, and graphs](11259A185-10-AdaBoost/)
 
 
-## 11. Implement a Basic Reinforcement Learning Model
+$111259A185 - Implement a Basic Reinforcement Learning Model
 
-[Open experiment with code and output](11-Reinforcement-Learning/)
+[Open experiment with code and output](11259A185-11-Reinforcement-Learning/)
+
 

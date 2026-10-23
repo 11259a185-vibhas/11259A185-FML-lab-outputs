@@ -111,7 +111,9 @@ sns.heatmap(
 plt.xlabel("Predicted Result")
 plt.ylabel("Actual Result")
 plt.title("SVM Confusion Matrix")
-plt.show()
+plt.tight_layout()
+plt.savefig("svm_confusion_matrix.png", dpi=180, bbox_inches="tight")
+plt.close()
 
 
 # -----------------------------
@@ -138,11 +140,15 @@ plt.bar(
     color=['blue', 'green', 'orange', 'red']
 )
 
-plt.ylim(0, 1)
+plt.ylim(0, 1.12)
 plt.ylabel("Score")
 plt.title("SVM Classification Evaluation Metrics")
 
 for i, value in enumerate(metrics.values()):
     plt.text(i, value + 0.02, f"{value:.2f}", ha='center')
 
-plt.show()
+plt.tight_layout()
+plt.savefig("svm_evaluation_metrics.png", dpi=180, bbox_inches="tight")
+plt.close()
+
+

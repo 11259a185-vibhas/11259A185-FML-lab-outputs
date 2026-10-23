@@ -1,8 +1,8 @@
-# 7. K-Means Clustering
+$111259A185 - K-Means Clustering
 
 [Back to experiments](../README.md)
 
-[Python source](kmeans_clustering.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_kmeans_clustering.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
@@ -74,4 +74,5 @@ plt.show()
 
 ## Run
 
-From this experiment folder, run: `python kmeans_clustering.py`.
+From this experiment folder, run: `python 11259A185_kmeans_clustering.py`.
+

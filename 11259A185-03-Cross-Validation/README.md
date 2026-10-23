@@ -1,8 +1,8 @@
-# 3. Cross Validation
+$111259A185 - Cross Validation
 
 [Back to experiments](../README.md)
 
-[Python source](cross_validation.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_cross_validation.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
@@ -55,4 +55,5 @@ Average Accuracy:
 
 ## Run
 
-From this experiment folder, run: `python cross_validation.py`.
+From this experiment folder, run: `python 11259A185_cross_validation.py`.
+

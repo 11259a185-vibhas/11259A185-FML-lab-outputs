@@ -1,10 +1,10 @@
-# 11. Implement a Basic Reinforcement Learning Model
+$111259A185 - Implement a Basic Reinforcement Learning Model
 
 [Back to experiments](../README.md)
 
 This experiment uses Q-learning in a six-state environment. The agent learns action values from rewards to reach the goal at state 5. It uses NumPy and does not require a CSV dataset.
 
-[Python source](q_learning.py) | [Supplied text output](output.txt)
+[Python source](11259A185_q_learning.py) | [Supplied text output](output.txt)
 
 ## Code
 
@@ -58,6 +58,7 @@ Q-Table:
 
 ## Run
 
-From this experiment folder, run: `python q_learning.py`.
+From this experiment folder, run: `python 11259A185_q_learning.py`.
 
 The output above is the supplied Q-table. Training uses random exploration, so results may vary between runs.
+

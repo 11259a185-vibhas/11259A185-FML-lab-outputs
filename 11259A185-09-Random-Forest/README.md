@@ -1,43 +1,44 @@
-# 10. AdaBoost
+$111259A185 - Random Forest
 
 [Back to experiments](../README.md)
 
-[Python source](adaboost.py) | [Dataset](data.csv) | [Text output](output.txt)
+[Python source](11259A185_random_forest.py) | [Dataset](data.csv) | [Text output](output.txt)
 
 ## Code
 
 ```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import matplotlib.pyplot as plt
-
+# Load dataset
 data = pd.read_csv("data.csv")
-
-X = data[['Hours_Studied', 'Attendance', 'Assignments']]
+# Input features
+X = data[['Hours_Studied','Attendance','Assignments']]
+# Target variable
 y = data['Result']
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-
-model = AdaBoostClassifier(n_estimators=50, random_state=42)
+# Split dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Create Random Forest model
+model = RandomForestClassifier(n_estimators=100,random_state=42)
+# Train the model
 model.fit(X_train, y_train)
-
+# Predict test data
 y_pred = model.predict(X_test)
-
-print("Accuracy:", accuracy_score(y_test, y_pred))
+# Evaluate performance
+print("Accuracy", accuracy_score(y_test, y_pred))
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
-print(classification_report(y_test, y_pred, zero_division=0))
-
+print(classification_report(y_test, y_pred))
+# Feature Importance Graph
 importance = model.feature_importances_
 plt.bar(X.columns, importance)
 plt.xlabel("Features")
 plt.ylabel("Importance")
-plt.title("AdaBoost Feature Importance")
+plt.title("Random Forest Feature Importance")
 plt.show()
 ```
 
@@ -63,9 +64,10 @@ weighted avg       1.00      1.00      1.00         4
 
 ## Graphs
 
-![AdaBoost - adaboost_feature_importance.png](adaboost_feature_importance.png)
+![Random Forest - random_forest_feature_importance.png](random_forest_feature_importance.png)
 
 
 ## Run
 
-From this experiment folder, run: `python adaboost.py`.
+From this experiment folder, run: `python 11259A185_random_forest.py`.
+
